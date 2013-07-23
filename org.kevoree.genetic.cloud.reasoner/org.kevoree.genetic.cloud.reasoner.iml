@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.kevoree.genetic:org.kevoree.genetic.framework:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: moea:moea.framework:1.17" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-math:2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: jfree:jcommon:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.model:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:0.5.998" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.kotlin:kotlin-runtime:0.5.998" level="project" />
+    <orderEntry type="library" name="Maven: fr.inria.jfilter:jfilter-library:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jetbrains.intellij:annotations:117.157" level="project" />
+    <orderEntry type="module" module-name="org.kevoree.genetic.cloud.library" />
+    <orderEntry type="library" name="Maven: org.kevoree.tools:org.kevoree.tools.javase.framework:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.framework:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.api:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.model.context:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.log:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.adaptation.model:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.kcl:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree.tools:org.kevoree.tools.annotation.api:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree.corelibrary.sky:org.kevoree.library.sky.api:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree.corelibrary.javase:org.kevoree.library.javase.javaseNode:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.kompare:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.jgrapht:jgrapht-jdk1.5:0.7.3" level="project" />
+    <orderEntry type="library" name="Maven: org.kevoree:org.kevoree.basechecker:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.9.2" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.13" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.13" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
+  </component>
+</module>
+

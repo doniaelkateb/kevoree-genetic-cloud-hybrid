@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/org.kevoree.genetic.cloud.library.iml" filepath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/org.kevoree.genetic.cloud.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/org.kevoree.genetic.cloud.reasoner.iml" filepath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/org.kevoree.genetic.cloud.reasoner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.root.iml" filepath="$PROJECT_DIR$/org.kevoree.genetic.cloud.root.iml" />
+    </modules>
+  </component>
+</project>
+
