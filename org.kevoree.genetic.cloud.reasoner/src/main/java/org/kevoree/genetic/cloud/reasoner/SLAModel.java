@@ -16,6 +16,10 @@ public class SLAModel {
     private HashMap<String, Double> slaVCPULoad = new HashMap<String, Double>();
 
     private HashMap<String, Double> slaSecurity = new HashMap<String, Double>();
+    private HashMap<String, Double> redundancy = new HashMap<String, Double>();
+
+
+    private HashMap<String, Double> slaRedundancy = new HashMap<String, Double>();
 
     private Double maxCost = 0d;
 
@@ -44,6 +48,19 @@ public class SLAModel {
     public Double getVCPULoad(String td) {
         return slaVCPULoad.get(td);
     }
+
+
+
+    public SLAModel putRedunduncy(String td, Double p) {
+        redundancy.put(td, p);
+        return this;
+    }
+
+    public Double getRedunduncy(String td) {
+        return redundancy.get(td);
+    }
+
+
 
     public SLAModel scale(Double factor) {
         SLAModel newSLAMODEL = new SLAModel();
