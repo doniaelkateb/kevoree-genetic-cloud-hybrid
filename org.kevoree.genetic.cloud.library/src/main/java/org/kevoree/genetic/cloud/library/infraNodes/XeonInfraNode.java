@@ -10,8 +10,9 @@ import org.kevoree.library.sky.api.nodeType.IaaSNode;
 @NodeType
 @Library(name = "Snt-Cloud")
 @DictionaryType({
-        @DictionaryAttribute(name = "cost", defaultValue = "30", optional = true),
+        //@DictionaryAttribute(name = "cost", defaultValue = "30", optional = true),
         @DictionaryAttribute(name = "consumption", defaultValue = "300", optional = true),
+        @DictionaryAttribute(name = "dateofstartofuse", defaultValue = "5", optional = true),
         @DictionaryAttribute(name = "vcpu", defaultValue = "8", optional = true),
 })
 public class XeonInfraNode implements IaaSNode {

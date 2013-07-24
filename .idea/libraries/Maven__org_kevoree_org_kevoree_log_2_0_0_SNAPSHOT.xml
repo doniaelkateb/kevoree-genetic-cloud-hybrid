@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.kevoree:org.kevoree.log:2.0.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/org.kevoree.log/2.0.0-SNAPSHOT/org.kevoree.log-2.0.0-20130723.005806-74.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/org.kevoree.log/2.0.0-SNAPSHOT/org.kevoree.log-2.0.0-20130723.125808-75.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/org.kevoree.log/2.0.0-SNAPSHOT/org.kevoree.log-2.0.0-20130723.005806-74-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/org.kevoree.log/2.0.0-SNAPSHOT/org.kevoree.log-2.0.0-20130723.125808-75-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/org.kevoree.log/2.0.0-SNAPSHOT/org.kevoree.log-2.0.0-20130723.005806-74-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/kevoree/org.kevoree.log/2.0.0-SNAPSHOT/org.kevoree.log-2.0.0-20130723.125808-75-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

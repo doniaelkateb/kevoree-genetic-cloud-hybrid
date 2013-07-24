@@ -16,7 +16,7 @@ import org.kevoree.genetic.cloud.reasoner.util.PropertyCachedResolver;
 public class CostFitness extends AbstractSLAKevoreeFitnessFunction {
 
     private PropertyCachedResolver resolver = new PropertyCachedResolver();
-    private static final String dictionaryAttName = "cost";
+    private static final String dictionaryAttName = "Price/hour";
 
     private PropertyCachedResolver resolver1 = new PropertyCachedResolver();
     private static final String dictionaryAttName1 = "dateofstartofuse";
