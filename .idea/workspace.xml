@@ -2,28 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/AbstractSLAKevoreeFitnessFunction.java" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/AbstractSLAKevoreeFitnessFunction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/CostFitness.java" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/CostFitness.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_kevoree_org_kevoree_log_2_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kevoree_org_kevoree_log_2_0_0_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/XeonInfraNode.java" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/XeonInfraNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/org.kevoree.genetic.cloud.library.iml" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/org.kevoree.genetic.cloud.library.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_kevoree_org_kevoree_model_2_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_kevoree_org_kevoree_model_2_0_0_SNAPSHOT.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/RedundancyFitness.java" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/RedundancyFitness.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestCost.java" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestCost.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/target/generated-sources/kevoree/KEV-INF/lib.kev.debug" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/target/generated-sources/kevoree/KEV-INF/lib.kev.debug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/target/generated-sources/kevoree/KEV-INF/lib.kev" afterPath="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/target/generated-sources/kevoree/KEV-INF/lib.kev" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="org.kevoree.genetic.cloud.root.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374653063860" ignored="false" />
+    <file path="/Dummy.txt" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374827977885" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/org/kevoree/tools/org.kevoree.tools.annotation.mavenplugin/2.0.0-SNAPSHOT/org.kevoree.tools.annotation.mavenplugin-2.0.0-SNAPSHOT.jar!/META-INF/maven/plugin.xml" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374564786835" ignored="false" />
-    <file path="/Rackspace1.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374566550417" ignored="false" />
+    <file path="/Rackspace1.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374746514756" ignored="false" />
     <file path="/Amazon1US.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374570061296" ignored="false" />
-    <file path="/fragment.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374570862386" ignored="false" />
+    <file path="/fragment.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374748179145" ignored="false" />
     <file path="/Amazon1EU.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374570910466" ignored="false" />
     <file path="/Amazon1AS.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374571199986" ignored="false" />
     <file path="/Amazon2AS.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374571393209" ignored="false" />
     <file path="/Amazon3AS.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374571421977" ignored="false" />
     <file path="/Amazon4AS.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374571468770" ignored="false" />
     <file path="/FilterSecurity.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374594515387" ignored="false" />
-    <file path="/TestCost.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374665563445" ignored="false" />
-    <file path="/ExamplePopulationFactory.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374663880968" ignored="false" />
-    <file path="/TestRedundancy.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374666425169" ignored="false" />
+    <file path="/TestCost.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374674803446" ignored="false" />
+    <file path="/ExamplePopulationFactory.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374755000178" ignored="false" />
+    <file path="/TestRedundancy.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374760973351" ignored="false" />
+    <file path="/CostFitness.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374754873079" ignored="false" />
+    <file path="/RedundancyFitness.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374832751848" ignored="false" />
+    <file path="/AbstractSLAKevoreeFitnessFunction.java" changelist="0c6752c2-c3bb-4fd7-a692-68bbeae40a03" time="1374761753135" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,56 +94,43 @@
       <file leaf-file-name="TestCost.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestCost.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="22" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyCachedResolver.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/util/PropertyCachedResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+            <state line="34" column="53" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumptionFitnessTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/ConsumptionFitnessTest.java">
+      <file leaf-file-name="XenCustomerNode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/virtualNodes/XenCustomerNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="40" selection-start="1635" selection-end="1671" vertical-scroll-proportion="0.0">
+            <state line="13" column="13" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CostFitness.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/CostFitness.java">
+      <file leaf-file-name="Rackspace7.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+            <state line="32" column="13" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRedundancy.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java">
+      <file leaf-file-name="Amazon3AS.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon3AS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="57" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="21" column="13" selection-start="617" selection-end="617" vertical-scroll-proportion="0.3502747">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunnerPaaSOptimization.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/RunnerPaaSOptimization.java">
+      <file leaf-file-name="VMWareCustomerNode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/virtualNodes/VMWareCustomerNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="9" selection-start="941" selection-end="1000" vertical-scroll-proportion="0.0">
+            <state line="13" column="13" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,38 +139,46 @@
       <file leaf-file-name="XeonInfraNode.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/XeonInfraNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
+            <state line="17" column="13" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rackspace1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace1.java">
+      <file leaf-file-name="ARMInfraNode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/ARMInfraNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="43" selection-start="916" selection-end="926" vertical-scroll-proportion="0.0">
+            <state line="16" column="13" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rackspace2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace2.java">
+      <file leaf-file-name="RedundancyFitness.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/RedundancyFitness.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExamplePopulationFactory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/population/ExamplePopulationFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="70" selection-start="3372" selection-end="3372" vertical-scroll-proportion="1.0486009">
+            <state line="37" column="103" selection-start="1408" selection-end="1420" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#708#723#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterSecurity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/operators/FilterSecurity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestRedundancy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -199,10 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon4EU.java" />
-        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon1AS.java" />
-        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon2AS.java" />
-        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon3AS.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon4AS.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/onlineStore/ItemDB.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/onlineStore/PaymentDB.java" />
@@ -210,11 +208,15 @@
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/onlineStore/WebFrontend.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/onlineStore/LoadBalancer.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/operators/FilterSecurity.java" />
-        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/population/ExamplePopulationFactory.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/XeonInfraNode.java" />
+        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace1.java" />
+        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/virtualNodes/Rackspace1.java" />
+        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/population/ExamplePopulationFactory.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/CostFitness.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestCost.java" />
+        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/AbstractSLAKevoreeFitnessFunction.java" />
         <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java" />
+        <option value="$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/RedundancyFitness.java" />
       </list>
     </option>
   </component>
@@ -250,6 +252,20 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Kevoree :: Genetic :: Cloud :: Library" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
@@ -283,8 +299,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,10 +358,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reasoner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operators" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -601,6 +611,106 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree-genetic-cloud-hybrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated-sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaSENode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree-genetic-cloud-hybrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated-sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KEV-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree-genetic-cloud-hybrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generated-sources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree-genetic-cloud-hybrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -752,40 +862,62 @@
               <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amazonNodes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree-genetic-cloud-hybrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.kevoree.genetic.cloud.root" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kevoree-genetic-cloud-hybrid" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dictionaries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.TestRedundancy">
-    <configuration default="false" name="TestCost" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.kevoree.genetic.cloud.reasoner.fitness.TestCost" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="org.kevoree.genetic.cloud.reasoner" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="TestRedundancy" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.kevoree.genetic.cloud.reasoner.fitness.TestRedundancy" />
       <option name="VM_PARAMETERS" />
@@ -808,25 +940,34 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -854,6 +995,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -890,14 +1044,50 @@
       <patterns />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="TestCost" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.kevoree.genetic.cloud.reasoner.fitness.TestCost" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="org.kevoree.genetic.cloud.reasoner" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConsumptionFitnessTest" type="JUnit" factoryName="JUnit">
+      <module name="org.kevoree.genetic.cloud.reasoner" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.kevoree.genetic.cloud.reasoner.fitness" />
+      <option name="MAIN_CLASS_NAME" value="org.kevoree.genetic.cloud.reasoner.fitness.ConsumptionFitnessTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.TestCost" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TestRedundancy" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ConsumptionFitnessTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TestRedundancy" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.TestRedundancy" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestCost" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -943,19 +1133,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20591234" sideWeight="0.078975454" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925585" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18450561" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09605123" sideWeight="0.74413866" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14194237" sideWeight="0.79408765" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2764141" sideWeight="0.74413866" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25586137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29669157" sideWeight="0.79408765" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20591234" sideWeight="0.92102456" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23445463" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1025,9 +1215,81 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/onlineStore/UserDB.java">
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/RunnerPaaSOptimization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="588" selection-end="594" vertical-scroll-proportion="0.0">
+        <state line="13" column="13" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/SLAModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/RedondencyFitnessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/population/ExamplePopulationFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="34" selection-start="3479" selection-end="3485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/CostFitness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="7" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/SecurityFitness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="766" selection-end="766" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestCost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="53" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1315" selection-end="1315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/RedundancyFitness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="103" selection-start="1408" selection-end="1420" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/operators/FilterSecurity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/XeonInfraNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1053,96 +1315,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/RedondencyFitnessTest.java">
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/IsolationFitnessTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+        <state line="32" column="13" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/infraNodes/XeonInfraNode.java">
+    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/amazonNodes/Amazon3AS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0">
+        <state line="21" column="13" selection-start="617" selection-end="617" vertical-scroll-proportion="0.3502747">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/util/PropertyCachedResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/ConsumptionFitnessTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="40" selection-start="1635" selection-end="1671" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/fitness/CostFitness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="43" selection-start="916" selection-end="926" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.library/src/main/java/org/kevoree/genetic/cloud/library/rackspaceNodes/Rackspace2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1167" selection-end="1167" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/RunnerPaaSOptimization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="941" selection-end="1000" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestCost.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="22" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/test/java/org/kevoree/genetic/cloud/reasoner/fitness/TestRedundancy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="57" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.kevoree.genetic.cloud.reasoner/src/main/java/org/kevoree/genetic/cloud/reasoner/population/ExamplePopulationFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="70" selection-start="3372" selection-end="3372" vertical-scroll-proportion="1.0486009">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#708#723#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

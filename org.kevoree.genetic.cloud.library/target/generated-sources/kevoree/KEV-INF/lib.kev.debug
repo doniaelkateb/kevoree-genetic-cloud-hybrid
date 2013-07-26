@@ -1,24 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <org.kevoree:ContainerRoot xmlns:org.kevoree="http://kevoree/1.0" xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI">
-<typeDefinitions xsi:type="org.kevoree:ComponentType" name="WebFrontend" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.WebFrontendFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.WebFrontend" abstract="false" deployUnits="//@deployUnits.0">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace5" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace5Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace5" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.4" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.0">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="8GB" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="320GB" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="4" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.48" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="350.40" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.0/@dictionaryType/@attributes.3">
 </defaultValues>
 </dictionaryType>
-<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.13">
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace6" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace6Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace6" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="15GB" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="620GB" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="6" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.90" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="657.00" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.1/@dictionaryType/@attributes.3">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace3" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace3Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace3" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="2GB" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="80GB" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="2" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.12" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="87.60" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.3">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon3EU" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon3EUFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon3EU" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.3/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.3/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.240" attribute="//@typeDefinitions.3/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace4" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace4Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace4" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="4GB" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="160GB" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="2" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.24" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="175.20" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.3">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:ComponentType" name="WebFrontend" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.WebFrontendFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.WebFrontend" abstract="false" deployUnits="//@deployUnits.0">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="security level" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.4" attribute="//@typeDefinitions.5/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="A" attribute="//@typeDefinitions.5/@dictionaryType/@attributes.0">
+</defaultValues>
+</dictionaryType>
+<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.33">
 </required>
-<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.13">
+<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.33">
 <mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
 </mappings>
 <mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
 </mappings>
 </provided>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="CloudNode" abstract="false">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon1US" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon1USFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon1US" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.6/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.6/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.060" attribute="//@typeDefinitions.6/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="XenCustomerNode" factoryBean="org.kevoree.genetic.cloud.library.virtualNodes.XenCustomerNodeFactory" bean="org.kevoree.genetic.cloud.library.virtualNodes.XenCustomerNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.7 //@typeDefinitions.1 //@typeDefinitions.10 //@typeDefinitions.11" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace1" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace1Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace1" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="512MB" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="20GB" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.022" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="16.06" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.7/@dictionaryType/@attributes.3">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace2" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace2Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace2" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1GB" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="40GB" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.06" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="43.80" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.3">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="XenCustomerNode" factoryBean="org.kevoree.genetic.cloud.library.virtualNodes.XenCustomerNodeFactory" bean="org.kevoree.genetic.cloud.library.virtualNodes.XenCustomerNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
@@ -42,11 +440,11 @@
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.6">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.9/@dictionaryType/@attributes.6">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.1">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.9/@dictionaryType/@attributes.1">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.5" attribute="//@typeDefinitions.2/@dictionaryType/@attributes.9">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.5" attribute="//@typeDefinitions.9/@dictionaryType/@attributes.9">
 </defaultValues>
 </dictionaryType>
 <managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
@@ -54,16 +452,56 @@
 <managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
 </managedPrimitiveTypeRefs>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:ComponentType" name="ItemDB" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.ItemDBFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.ItemDB" abstract="false" deployUnits="//@deployUnits.0">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon2AS" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon2ASFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon2AS" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.4" attribute="//@typeDefinitions.3/@dictionaryType/@attributes.0">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.10/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.10/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.120" attribute="//@typeDefinitions.10/@dictionaryType/@attributes.9">
 </defaultValues>
 </dictionaryType>
-<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.13">
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:ComponentType" name="PaymentDB" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.PaymentDBFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.PaymentDB" abstract="false" deployUnits="//@deployUnits.0">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="security level" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.6" attribute="//@typeDefinitions.11/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="A" attribute="//@typeDefinitions.11/@dictionaryType/@attributes.0">
+</defaultValues>
+</dictionaryType>
+<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.33">
 </required>
-<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.13">
+<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.33">
 <mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
 </mappings>
 <mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
@@ -72,37 +510,81 @@
 </typeDefinitions>
 <typeDefinitions xsi:type="org.kevoree:ComponentType" name="LoadBalancer" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.LoadBalancerFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.LoadBalancer" abstract="false" deployUnits="//@deployUnits.0">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="security level" optional="true" state="false" fragmentDependant="false">
+</attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.2" attribute="//@typeDefinitions.4/@dictionaryType/@attributes.0">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.2" attribute="//@typeDefinitions.12/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="B" attribute="//@typeDefinitions.12/@dictionaryType/@attributes.0">
 </defaultValues>
 </dictionaryType>
-<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.13">
+<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.33">
 </required>
-<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.13">
+<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.33">
 <mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
 </mappings>
 <mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
 </mappings>
 </provided>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:ComponentType" name="PaymentDB" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.PaymentDBFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.PaymentDB" abstract="false" deployUnits="//@deployUnits.0">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Rackspace7" factoryBean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace7Factory" bean="org.kevoree.genetic.cloud.library.rackspaceNodes.Rackspace7" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.6" attribute="//@typeDefinitions.5/@dictionaryType/@attributes.0">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="location" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DiskSpace" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/month" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Price/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vCPUs" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.9">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.7">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="30GB" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.2">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1.2TB" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="8" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.14">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1.20" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.12">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="867.60" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.11">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="US" attribute="//@typeDefinitions.13/@dictionaryType/@attributes.3">
 </defaultValues>
 </dictionaryType>
-<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.13">
-</required>
-<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.13">
-<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
-</mappings>
-<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
-</mappings>
-</provided>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="XeonInfraNode" factoryBean="org.kevoree.genetic.cloud.library.infraNodes.XeonInfraNodeFactory" bean="org.kevoree.genetic.cloud.library.infraNodes.XeonInfraNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.1 //@typeDefinitions.12" managedPrimitiveTypes="//@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.4">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="PJavaSENode" abstract="false">
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="ARMInfraNode" factoryBean="org.kevoree.genetic.cloud.library.infraNodes.ARMInfraNodeFactory" bean="org.kevoree.genetic.cloud.library.infraNodes.ARMInfraNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.20 //@typeDefinitions.17" managedPrimitiveTypes="//@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.4">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
@@ -128,17 +610,203 @@
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="30" attribute="//@typeDefinitions.6/@dictionaryType/@attributes.10">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="18" attribute="//@typeDefinitions.15/@dictionaryType/@attributes.10">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="300" attribute="//@typeDefinitions.6/@dictionaryType/@attributes.5">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="30" attribute="//@typeDefinitions.15/@dictionaryType/@attributes.5">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="8" attribute="//@typeDefinitions.6/@dictionaryType/@attributes.11">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1" attribute="//@typeDefinitions.15/@dictionaryType/@attributes.11">
 </defaultValues>
 </dictionaryType>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="PJavaSENode" abstract="false">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="JavaSENode" abstract="false">
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="VMWareCustomerNode" factoryBean="org.kevoree.genetic.cloud.library.virtualNodes.VMWareCustomerNodeFactory" bean="org.kevoree.genetic.cloud.library.virtualNodes.VMWareCustomerNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.7 //@typeDefinitions.1 //@typeDefinitions.10 //@typeDefinitions.11" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="IaaSNode" abstract="false">
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:ComponentType" name="UserDB" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.UserDBFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.UserDB" abstract="false" deployUnits="//@deployUnits.0">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="security level" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.4" attribute="//@typeDefinitions.18/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="C" attribute="//@typeDefinitions.18/@dictionaryType/@attributes.0">
+</defaultValues>
+</dictionaryType>
+<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.33">
+</required>
+<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.33">
+<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
+</mappings>
+<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
+</mappings>
+</provided>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon4US" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon4USFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon4US" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.19/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.19/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.480" attribute="//@typeDefinitions.19/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="CloudNode" abstract="false">
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:ComponentType" name="ItemDB" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.ItemDBFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.ItemDB" abstract="false" deployUnits="//@deployUnits.0">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="security level" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu-load" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.4" attribute="//@typeDefinitions.21/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="B" attribute="//@typeDefinitions.21/@dictionaryType/@attributes.0">
+</defaultValues>
+</dictionaryType>
+<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.33">
+</required>
+<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.33">
+<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
+</mappings>
+<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
+</mappings>
+</provided>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon4AS" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon4ASFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon4AS" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.22/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.22/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.480" attribute="//@typeDefinitions.22/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="XeonInfraNode" factoryBean="org.kevoree.genetic.cloud.library.infraNodes.XeonInfraNodeFactory" bean="org.kevoree.genetic.cloud.library.infraNodes.XeonInfraNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.20 //@typeDefinitions.17" managedPrimitiveTypes="//@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.4">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="dateofstartofuse" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="subnet" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="consumption" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="inet" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="mask" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="300" attribute="//@typeDefinitions.23/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="5" attribute="//@typeDefinitions.23/@dictionaryType/@attributes.0">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="8" attribute="//@typeDefinitions.23/@dictionaryType/@attributes.11">
+</defaultValues>
+</dictionaryType>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon1AS" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon1ASFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon1AS" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.24/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.24/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.060" attribute="//@typeDefinitions.24/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="VMWareCustomerNode" factoryBean="org.kevoree.genetic.cloud.library.virtualNodes.VMWareCustomerNodeFactory" bean="org.kevoree.genetic.cloud.library.virtualNodes.VMWareCustomerNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
@@ -162,11 +830,11 @@
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.6">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.25/@dictionaryType/@attributes.6">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.1">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.25/@dictionaryType/@attributes.1">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1" attribute="//@typeDefinitions.8/@dictionaryType/@attributes.9">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1" attribute="//@typeDefinitions.25/@dictionaryType/@attributes.9">
 </defaultValues>
 </dictionaryType>
 <managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
@@ -174,65 +842,227 @@
 <managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
 </managedPrimitiveTypeRefs>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="ARMInfraNode" factoryBean="org.kevoree.genetic.cloud.library.infraNodes.ARMInfraNodeFactory" bean="org.kevoree.genetic.cloud.library.infraNodes.ARMInfraNode" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.1 //@typeDefinitions.12" managedPrimitiveTypes="//@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.4">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon4EU" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon4EUFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon4EU" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
 <dictionaryType xsi:type="org.kevoree:DictionaryType">
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="subnet" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="consumption" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="inet" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="mask" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.26/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.26/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.480" attribute="//@typeDefinitions.26/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon2EU" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon2EUFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon2EU" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
 </attributes>
 <attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="cost" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu" optional="true" state="false" fragmentDependant="false">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
 </attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="18" attribute="//@typeDefinitions.9/@dictionaryType/@attributes.10">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.27/@dictionaryType/@attributes.6">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="30" attribute="//@typeDefinitions.9/@dictionaryType/@attributes.5">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.27/@dictionaryType/@attributes.1">
 </defaultValues>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="1" attribute="//@typeDefinitions.9/@dictionaryType/@attributes.11">
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.120" attribute="//@typeDefinitions.27/@dictionaryType/@attributes.9">
 </defaultValues>
 </dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon1EU" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon1EUFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon1EU" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.28/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.28/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.060" attribute="//@typeDefinitions.28/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
+</typeDefinitions>
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon2US" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon2USFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon2US" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.29/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.29/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.120" attribute="//@typeDefinitions.29/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
 </typeDefinitions>
 <typeDefinitions xsi:type="org.kevoree:NodeType" name="PaaSNode" abstract="false">
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="JavaSENode" abstract="false">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon3AS" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon3ASFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon3AS" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.31/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.31/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.240" attribute="//@typeDefinitions.31/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:NodeType" name="IaaSNode" abstract="false">
+<typeDefinitions xsi:type="org.kevoree:NodeType" name="Amazon3US" factoryBean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon3USFactory" bean="org.kevoree.genetic.cloud.library.amazonNodes.Amazon3US" abstract="false" deployUnits="//@deployUnits.0" superTypes="//@typeDefinitions.14 //@typeDefinitions.20 //@typeDefinitions.30 //@typeDefinitions.16" managedPrimitiveTypes="//@adaptationPrimitiveTypes.0 //@adaptationPrimitiveTypes.1 //@adaptationPrimitiveTypes.2 //@adaptationPrimitiveTypes.3 //@adaptationPrimitiveTypes.4 //@adaptationPrimitiveTypes.5 //@adaptationPrimitiveTypes.6 //@adaptationPrimitiveTypes.7 //@adaptationPrimitiveTypes.8 //@adaptationPrimitiveTypes.9 //@adaptationPrimitiveTypes.10 //@adaptationPrimitiveTypes.11 //@adaptationPrimitiveTypes.12 //@adaptationPrimitiveTypes.13 //@adaptationPrimitiveTypes.14 //@adaptationPrimitiveTypes.15 //@adaptationPrimitiveTypes.16 //@adaptationPrimitiveTypes.17 //@adaptationPrimitiveTypes.18 //@adaptationPrimitiveTypes.19 //@adaptationPrimitiveTypes.20 //@adaptationPrimitiveTypes.21 //@adaptationPrimitiveTypes.22">
+<dictionaryType xsi:type="org.kevoree:DictionaryType">
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="DISK_SIZE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="coreLogLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_CORE" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="ARCH" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="RAM" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="JVMARGS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="logLevel" optional="true" state="false" datatype="enum=INFO,WARN,DEBUG,ERROR,FINE" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="CPU_FREQUENCY" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="OS" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="Cost/hour" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<attributes xsi:type="org.kevoree:DictionaryAttribute" name="WALLCLOCKTIME" optional="true" state="false" fragmentDependant="false">
+</attributes>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="INFO" attribute="//@typeDefinitions.32/@dictionaryType/@attributes.6">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="WARN" attribute="//@typeDefinitions.32/@dictionaryType/@attributes.1">
+</defaultValues>
+<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.240" attribute="//@typeDefinitions.32/@dictionaryType/@attributes.9">
+</defaultValues>
+</dictionaryType>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.18">
+</managedPrimitiveTypeRefs>
+<managedPrimitiveTypeRefs xsi:type="org.kevoree:AdaptationPrimitiveTypeRef" maxTime="120000" ref="//@adaptationPrimitiveTypes.15">
+</managedPrimitiveTypeRefs>
 </typeDefinitions>
 <typeDefinitions xsi:type="org.kevoree:MessagePortType" name="org.kevoree.framework.MessagePort" abstract="false" synchrone="false">
 </typeDefinitions>
-<typeDefinitions xsi:type="org.kevoree:ComponentType" name="UserDB" factoryBean="org.kevoree.genetic.cloud.library.onlineStore.UserDBFactory" bean="org.kevoree.genetic.cloud.library.onlineStore.UserDB" abstract="false" deployUnits="//@deployUnits.0">
-<dictionaryType xsi:type="org.kevoree:DictionaryType">
-<attributes xsi:type="org.kevoree:DictionaryAttribute" name="vcpu_load" optional="true" state="false" fragmentDependant="false">
-</attributes>
-<defaultValues xsi:type="org.kevoree:DictionaryValue" value="0.4" attribute="//@typeDefinitions.14/@dictionaryType/@attributes.0">
-</defaultValues>
-</dictionaryType>
-<required xsi:type="org.kevoree:PortTypeRef" name="outgoingConnection" optional="true" noDependency="true" ref="//@typeDefinitions.13">
-</required>
-<provided xsi:type="org.kevoree:PortTypeRef" name="message" optional="false" noDependency="false" ref="//@typeDefinitions.13">
-<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
-</mappings>
-<mappings xsi:type="org.kevoree:PortTypeMapping" beanMethodName="messageReceived" serviceMethodName="process">
-</mappings>
-</provided>
-</typeDefinitions>
-<repositories xsi:type="org.kevoree:Repository" url="http://repo1.maven.org/maven2">
+<repositories xsi:type="org.kevoree:Repository" url="http://repo.maven.apache.org/maven2">
 </repositories>
 <repositories xsi:type="org.kevoree:Repository" url="http://maven.kevoree.org/release/">
 </repositories>
@@ -240,57 +1070,55 @@
 </repositories>
 <repositories xsi:type="org.kevoree:Repository" url="http://maven.kevoree.org/snapshots/">
 </repositories>
-<libraries xsi:type="org.kevoree:TypeLibrary" name="SKY" subTypes="//@typeDefinitions.2 //@typeDefinitions.8">
+<libraries xsi:type="org.kevoree:TypeLibrary" name="SKY" subTypes="//@typeDefinitions.0 //@typeDefinitions.1 //@typeDefinitions.2 //@typeDefinitions.3 //@typeDefinitions.19 //@typeDefinitions.4 //@typeDefinitions.6 //@typeDefinitions.7 //@typeDefinitions.8 //@typeDefinitions.9 //@typeDefinitions.10 //@typeDefinitions.13 //@typeDefinitions.22 //@typeDefinitions.24 //@typeDefinitions.25 //@typeDefinitions.26 //@typeDefinitions.27 //@typeDefinitions.28 //@typeDefinitions.29 //@typeDefinitions.31 //@typeDefinitions.32">
 </libraries>
-<libraries xsi:type="org.kevoree:TypeLibrary" name="Snt-Cloud" subTypes="//@typeDefinitions.6 //@typeDefinitions.0 //@typeDefinitions.2 //@typeDefinitions.8 //@typeDefinitions.9 //@typeDefinitions.3 //@typeDefinitions.5 //@typeDefinitions.4 //@typeDefinitions.14">
+<libraries xsi:type="org.kevoree:TypeLibrary" name="Snt-Cloud" subTypes="//@typeDefinitions.0 //@typeDefinitions.1 //@typeDefinitions.3 //@typeDefinitions.2 //@typeDefinitions.6 //@typeDefinitions.5 //@typeDefinitions.4 //@typeDefinitions.7 //@typeDefinitions.8 //@typeDefinitions.9 //@typeDefinitions.10 //@typeDefinitions.11 //@typeDefinitions.12 //@typeDefinitions.13 //@typeDefinitions.15 //@typeDefinitions.18 //@typeDefinitions.19 //@typeDefinitions.21 //@typeDefinitions.22 //@typeDefinitions.23 //@typeDefinitions.24 //@typeDefinitions.25 //@typeDefinitions.26 //@typeDefinitions.27 //@typeDefinitions.28 //@typeDefinitions.29 //@typeDefinitions.31 //@typeDefinitions.32">
 </libraries>
-<libraries xsi:type="org.kevoree:TypeLibrary" name="JavaSE" subTypes="//@typeDefinitions.2 //@typeDefinitions.8">
+<libraries xsi:type="org.kevoree:TypeLibrary" name="JavaSE" subTypes="//@typeDefinitions.0 //@typeDefinitions.1 //@typeDefinitions.2 //@typeDefinitions.3 //@typeDefinitions.19 //@typeDefinitions.4 //@typeDefinitions.6 //@typeDefinitions.7 //@typeDefinitions.8 //@typeDefinitions.9 //@typeDefinitions.10 //@typeDefinitions.13 //@typeDefinitions.22 //@typeDefinitions.24 //@typeDefinitions.25 //@typeDefinitions.26 //@typeDefinitions.27 //@typeDefinitions.28 //@typeDefinitions.29 //@typeDefinitions.31 //@typeDefinitions.32">
 </libraries>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.genetic.cloud" unitName="org.kevoree.genetic.cloud.library" version="2.0.0-SNAPSHOT" hashcode="201307230933021" type="jar" requiredLibs="//@deployUnits.1 //@deployUnits.2 //@deployUnits.3 //@deployUnits.4 //@deployUnits.5 //@deployUnits.6 //@deployUnits.7 //@deployUnits.8 //@deployUnits.9 //@deployUnits.10 //@deployUnits.11 //@deployUnits.12 //@deployUnits.13 //@deployUnits.14 //@deployUnits.15 //@deployUnits.16 //@deployUnits.17 //@deployUnits.18 //@deployUnits.19 //@deployUnits.20 //@deployUnits.21 //@deployUnits.22" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.genetic.cloud" unitName="org.kevoree.genetic.cloud.library" version="2.0.0-SNAPSHOT" hashcode="201307251412771" type="jar" requiredLibs="//@deployUnits.1 //@deployUnits.2 //@deployUnits.3 //@deployUnits.4 //@deployUnits.5 //@deployUnits.6 //@deployUnits.7 //@deployUnits.8 //@deployUnits.9 //@deployUnits.10 //@deployUnits.11 //@deployUnits.12 //@deployUnits.13 //@deployUnits.14 //@deployUnits.15 //@deployUnits.16 //@deployUnits.17 //@deployUnits.18 //@deployUnits.19 //@deployUnits.20 //@deployUnits.21" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.tools" unitName="org.kevoree.tools.javase.framework" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.tools" unitName="org.kevoree.tools.javase.framework" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.framework" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.framework" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.api" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.api" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.model" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.model" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jetbrains.kotlin" unitName="kotlin-stdlib" version="0.5.998" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="fr.inria.jfilter" unitName="jfilter-library" version="1.3" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jetbrains.kotlin" unitName="kotlin-runtime" version="0.5.998" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.model.context" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="fr.inria.jfilter" unitName="jfilter-library" version="1.3" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.adaptation.model" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jetbrains.intellij" unitName="annotations" version="117.157" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.log" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.model.context" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jetbrains.kotlin" unitName="kotlin-stdlib" version="0.5.998" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.log" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jetbrains.kotlin" unitName="kotlin-runtime" version="0.5.998" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.adaptation.model" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.tools" unitName="org.kevoree.tools.annotation.api" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.kcl" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.corelibrary.sky" unitName="org.kevoree.library.sky.api" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.tools" unitName="org.kevoree.tools.annotation.api" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.corelibrary.javase" unitName="org.kevoree.library.javase.javaseNode" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.corelibrary.sky" unitName="org.kevoree.library.sky.api" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.kcl" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree.corelibrary.javase" unitName="org.kevoree.library.javase.javaseNode" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.kompare" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.kompare" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.basechecker" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jgrapht" unitName="jgrapht-jdk1.5" version="0.7.3" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.jgrapht" unitName="jgrapht-jdk1.5" version="0.7.3" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.kevoree" unitName="org.kevoree.basechecker" version="2.0.0-SNAPSHOT" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.scala-lang" unitName="scala-library" version="2.9.2" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.scala-lang" unitName="scala-library" version="2.9.2" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="ch.qos.logback" unitName="logback-classic" version="1.0.13" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="ch.qos.logback" unitName="logback-classic" version="1.0.13" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="ch.qos.logback" unitName="logback-core" version="1.0.13" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="ch.qos.logback" unitName="logback-core" version="1.0.13" type="jar" targetNodeType="//@typeDefinitions.11">
-</deployUnits>
-<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.slf4j" unitName="slf4j-api" version="1.7.5" type="jar" targetNodeType="//@typeDefinitions.11">
+<deployUnits xsi:type="org.kevoree:DeployUnit" groupName="org.slf4j" unitName="slf4j-api" version="1.7.5" type="jar" targetNodeType="//@typeDefinitions.16">
 </deployUnits>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="UpdateFragmentBinding">
 </adaptationPrimitiveTypes>
@@ -302,9 +1130,9 @@
 </adaptationPrimitiveTypes>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="RemoveNode">
 </adaptationPrimitiveTypes>
-<adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="RemoveInstance">
-</adaptationPrimitiveTypes>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="RemoveType">
+</adaptationPrimitiveTypes>
+<adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="RemoveInstance">
 </adaptationPrimitiveTypes>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="StartInstance">
 </adaptationPrimitiveTypes>
@@ -314,9 +1142,9 @@
 </adaptationPrimitiveTypes>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="StartThirdParty">
 </adaptationPrimitiveTypes>
-<adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="AddBinding">
-</adaptationPrimitiveTypes>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="AddNode">
+</adaptationPrimitiveTypes>
+<adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="AddBinding">
 </adaptationPrimitiveTypes>
 <adaptationPrimitiveTypes xsi:type="org.kevoree:AdaptationPrimitiveType" name="RemoveBinding">
 </adaptationPrimitiveTypes>

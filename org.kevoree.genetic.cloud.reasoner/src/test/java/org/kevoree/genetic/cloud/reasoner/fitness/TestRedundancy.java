@@ -1,5 +1,5 @@
 package org.kevoree.genetic.cloud.reasoner.fitness;
-
+import org.junit.Test;
 import org.kevoree.ContainerRoot;
 import org.kevoree.KevoreeFactory;
 import org.kevoree.genetic.cloud.library.onlineStore.ItemDB;
@@ -20,28 +20,29 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class TestRedundancy {
+    @Test
     public static void main(String[] args) {
+
+
+
 
         ExamplePopulationFactory factory = new ExamplePopulationFactory();
         KevoreeFactory kfactory = new DefaultKevoreeFactory();
         List<ContainerRoot> models = factory.createPopulation();
         ContainerRoot model = models.get(0);
 
-
         //print model to check consistency
-        JSONModelSerializer jsonModel = new JSONModelSerializer();
-        jsonModel.serialize(model,System.out);
+        //JSONModelSerializer jsonModel = new JSONModelSerializer();
+        //jsonModel.serialize(model,System.out);
 
 
-        SLAModel SLAModel = new SLAModel();
-        SLAModel.putRedunduncy(ItemDB.class.getSimpleName(), 1.0); //ItemDB  need 2Ghz
-        SLAModel.putRedunduncy(LoadBalancer.class.getSimpleName(), 1.0); //LoadBalancer  need 0.3Ghz
-        SLAModel.putRedunduncy(PaymentDB.class.getSimpleName(), 1.0);
 
-        RedundancyFitness fitness = new RedundancyFitness();
 
-        double redundancyfitness = fitness.evaluate(model);
-        System.out.println(redundancyfitness);
+
+       RedundancyFitness fitness = new RedundancyFitness();
+       double redundancyfitness = fitness.evaluate(model);
+       System.out.println(redundancyfitness);
+
 
     }
 }
