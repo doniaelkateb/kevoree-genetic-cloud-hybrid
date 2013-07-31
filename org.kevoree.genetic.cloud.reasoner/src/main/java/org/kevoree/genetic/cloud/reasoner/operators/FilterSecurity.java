@@ -21,7 +21,6 @@ public class FilterSecurity  {
     private PropertyCachedResolver resolver = new PropertyCachedResolver();
     private static final String AttName = "security";
 
-
     protected boolean filtersecurity(ContainerRoot root) {
 
 
@@ -41,7 +40,6 @@ public class FilterSecurity  {
                 if (temp!=level)return false ;
                 temp=level;
             }
-
         }
         return true;
     }
