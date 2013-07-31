@@ -34,9 +34,8 @@ public class CostFitness extends AbstractSLAKevoreeFitnessFunction {
             //System.out.println(virtualNode.getTypeDefinition());
             Cost  =  resolver.getDefault(virtualNode,dictionaryAttName);
             //System.out.println(Cost);
-            age = resolver1.getDefault(((ContainerNode) loopNode).getHost(), dictionaryAttName1);
+            age = 0 + (int)(Math.random()*20);
             System.out.println(age);
-
             if (age >=  3)
             {
             Cost = Cost - (Cost * (1.5  + 0.05 *(age-3))) /100;

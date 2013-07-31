@@ -34,36 +34,34 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         for (Repository r : rootModel.getRepositories()) {
             r.setRecursiveReadOnly();
         }
-        for (int i = 1; i < 6; i++) {
+       /* for (int i = 1; i < 6; i++) {
             ContainerNode n = factory.createContainerNode();
             n.setName("node_" + i);
             n.setTypeDefinition(rootModel.findTypeDefinitionsByID("XeonInfraNode"));
             rootModel.addNodes(n);
-        }
+        }   */
 
         //parcourir nodes et ajouter VM
         int nodecounter =0;
-        List<Object> VMNodeList = rootModel.selectByQuery("nodes[{ name = *node_* }]");
-        for (Object obj : VMNodeList)
-        {
+        //List<Object> VMNodeList = rootModel.selectByQuery("nodes[{ name = *node_* }]");
+        //for (Object obj : VMNodeList)
+       // {
             for (int i = 1; i < 8; i++)
             {
                 ContainerNode VMNode = factory.createContainerNode();
-                ContainerNode parentInfra = (ContainerNode) obj;
-
-                VMNode.setName("virtual_" + nodecounter+i);
+                //ContainerNode parentInfra = (ContainerNode) obj;
+                VMNode.setName("virtual_" + i);
                 VMNode.setTypeDefinition(rootModel.findTypeDefinitionsByID("Rackspace"+i));
-
-                parentInfra.addHosts(VMNode);
+                //parentInfra.addHosts(VMNode);
                 rootModel.addNodes(VMNode);
             }
             nodecounter++;
-        }
+       // }
 
         // Parcourir VM et ajouter composants  A,B,C
 
         //put component A in VM 01
-        ContainerNode VMNodeList1 = rootModel.findNodesByID("virtual_11");
+        ContainerNode VMNodeList1 = rootModel.findNodesByID("virtual_1");
         ComponentInstance composant = factory.createComponentInstance();
         composant.setName("item");
         TypeDefinition td = rootModel.findTypeDefinitionsByID("ItemDB");
@@ -71,7 +69,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         VMNodeList1.addComponents(composant);
 
         //put component B in VM 02
-        ContainerNode VMNodeList2 = rootModel.findNodesByID("virtual_21");
+        ContainerNode VMNodeList2 = rootModel.findNodesByID("virtual_2");
         ComponentInstance composant1 = factory.createComponentInstance();
         composant1.setName("loadbalancer");
         // How to set the type to component A
@@ -81,7 +79,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
 
 
         //put component C in VM 03
-        ContainerNode VMNodeList3 = rootModel.findNodesByID("virtual_31");
+        ContainerNode VMNodeList3 = rootModel.findNodesByID("virtual_3");
         ComponentInstance composant2 = factory.createComponentInstance();
         composant2.setName("userdb");
         TypeDefinition td2 = rootModel.findTypeDefinitionsByID("UserDB");

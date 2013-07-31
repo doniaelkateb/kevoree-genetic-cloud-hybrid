@@ -31,14 +31,16 @@ public class RedundancyFitness extends AbstractSLAKevoreeFitnessFunction{
         SLAModel.putRedunduncy(UserDB.class.getSimpleName(), 1.0);
 
 
-                       List<Object> composants = model.selectByQuery("nodes[*]/components[item]");
+                       List<Object> composants = model.selectByQuery("nodes[{ typeDefinition.name = *ItemDB }]");
                        redundancy += composants.size()/SLAModel.getRedunduncy("ItemDB");
-                       System.out.println("redundancy"+redundancy);
+                       System.out.println(composants.size());
 
-                       List<Object> composants1 = model.selectByQuery("nodes[*]/components[loadbalancer]");
+
+                       List<Object> composants1 =   model.selectByQuery("nodes[{ typeDefinition.name = *LoadBalancer }]");
                        redundancy += composants1.size()/ SLAModel.getRedunduncy("LoadBalancer");
 
-                       List<Object> composants2 = model.selectByQuery("nodes[*]/components[userdb]");
+
+                       List<Object> composants2 = model.selectByQuery("nodes[*]/TypeDefinition=UserDB");
                        redundancy += composants2.size()/ SLAModel.getRedunduncy("UserDB");
 
 

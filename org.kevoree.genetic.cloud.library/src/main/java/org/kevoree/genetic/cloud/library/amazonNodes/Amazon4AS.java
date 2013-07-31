@@ -21,7 +21,7 @@ import org.kevoree.library.sky.api.nodeType.PJavaSENode;
 @NodeType
 @Library(name = "Snt-Cloud")
 @DictionaryType({
-        @DictionaryAttribute(name = "Cost/hour", defaultValue = "0.480", optional = true),
+        @DictionaryAttribute(name = "Cost/hour", defaultValue = "0.640", optional = true),
 })
 
 public class Amazon4AS extends PJavaSENode {
