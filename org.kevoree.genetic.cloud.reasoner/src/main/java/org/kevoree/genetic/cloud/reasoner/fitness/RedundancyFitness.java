@@ -22,29 +22,30 @@ import java.util.List;
 public class RedundancyFitness extends AbstractSLAKevoreeFitnessFunction{
 
 
-    public double evaluate(ContainerRoot model) {
+    public double evaluate(ContainerRoot model, SLAModel SLAModel ) {
 
         Double redundancy = 0.0;
-        SLAModel SLAModel = new SLAModel();
-        SLAModel.putRedunduncy(ItemDB.class.getSimpleName(), 1.0);
-        SLAModel.putRedunduncy(LoadBalancer.class.getSimpleName(), 1.0);
-        SLAModel.putRedunduncy(UserDB.class.getSimpleName(), 1.0);
 
 
-                       List<Object> composants = model.selectByQuery("nodes[{ typeDefinition.name = *ItemDB }]");
+
+                       List<Object> TotalComponents  = model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = *}]");
+
+                       List<Object> composants = model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = ItemDB}]");
                        redundancy += composants.size()/SLAModel.getRedunduncy("ItemDB");
-                       System.out.println(composants.size());
 
-
-                       List<Object> composants1 =   model.selectByQuery("nodes[{ typeDefinition.name = *LoadBalancer }]");
+                       List<Object> composants1 =   model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = LoadBalancer}]");
                        redundancy += composants1.size()/ SLAModel.getRedunduncy("LoadBalancer");
 
-
-                       List<Object> composants2 = model.selectByQuery("nodes[*]/TypeDefinition=UserDB");
+                       List<Object> composants2 = model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = UserDB}]");
                        redundancy += composants2.size()/ SLAModel.getRedunduncy("UserDB");
 
 
-        return redundancy/3 * 100 ;
+        return redundancy/TotalComponents.size() * 100 ;
+    }
+
+    @Override
+    public double evaluate(ContainerRoot containerRoot) {
+        return 0;  //To change body of implemented methods use File | Settings | File Templates.
     }
 }
 

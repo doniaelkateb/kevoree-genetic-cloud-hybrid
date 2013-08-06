@@ -31,16 +31,18 @@ public class CostFitness extends AbstractSLAKevoreeFitnessFunction {
         for(Object loopNode : VMNodeList){
 
             ContainerNode virtualNode = (ContainerNode) loopNode;
-            //System.out.println(virtualNode.getTypeDefinition());
             Cost  =  resolver.getDefault(virtualNode,dictionaryAttName);
-            //System.out.println(Cost);
-            age = 0 + (int)(Math.random()*20);
 
+            //Fonction d'amortissement: to be changed
+
+            age = 0 + (int)(Math.random()*20);
             System.out.println(age);
             if (age >=  3)
             {
             Cost = Cost - (Cost * (1.5  + 0.05 *(age-3))) /100;
             }
+
+            //////////////////////////////////////
             gCost =  gCost +  Cost;
            System.out.println(gCost);
 
@@ -48,6 +50,6 @@ public class CostFitness extends AbstractSLAKevoreeFitnessFunction {
         if(gCost == 0){
             return 0d;
         }
-        return gCost ;
+        return  gCost/VMNodeList.size()* 100 ;
     }
 }

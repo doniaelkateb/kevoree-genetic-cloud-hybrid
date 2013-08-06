@@ -5,6 +5,7 @@ import org.kevoree.KevoreeFactory;
 import org.kevoree.genetic.cloud.library.onlineStore.ItemDB;
 import org.kevoree.genetic.cloud.library.onlineStore.LoadBalancer;
 import org.kevoree.genetic.cloud.library.onlineStore.PaymentDB;
+import org.kevoree.genetic.cloud.library.onlineStore.UserDB;
 import org.kevoree.genetic.cloud.reasoner.SLAModel;
 import org.kevoree.genetic.cloud.reasoner.population.ExamplePopulationFactory;
 import org.kevoree.impl.DefaultKevoreeFactory;
@@ -35,13 +36,13 @@ public class TestRedundancy {
         //JSONModelSerializer jsonModel = new JSONModelSerializer();
         //jsonModel.serialize(model,System.out);
 
-
-
-
-
-       RedundancyFitness fitness = new RedundancyFitness();
-       double redundancyfitness = fitness.evaluate(model);
-       System.out.println(redundancyfitness);
+        RedundancyFitness fitness = new RedundancyFitness();
+        SLAModel SLAModel = new SLAModel();
+        SLAModel.putRedunduncy(ItemDB.class.getSimpleName(), 1.0);
+        SLAModel.putRedunduncy(LoadBalancer.class.getSimpleName(), 1.0);
+        SLAModel.putRedunduncy(UserDB.class.getSimpleName(), 1.0);
+        double redundancyfitness = fitness.evaluate(model, SLAModel );
+        System.out.println(redundancyfitness);
 
 
     }

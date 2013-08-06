@@ -50,6 +50,10 @@
             <id>kevoree-snapshots</id>
             <url>http://maven.kevoree.org/snapshots/</url>
         </repository>
+        <repository>
+            <id>kevoree-OSS</id>
+            <url>http://oss.sonatype.org/content/groups/public</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>

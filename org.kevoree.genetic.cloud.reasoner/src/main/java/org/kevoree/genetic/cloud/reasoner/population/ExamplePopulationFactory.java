@@ -52,6 +52,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
                 //ContainerNode parentInfra = (ContainerNode) obj;
                 VMNode.setName("virtual_" + i);
                 VMNode.setTypeDefinition(rootModel.findTypeDefinitionsByID("Rackspace"+i));
+                System.out.println(VMNode.getTypeDefinition());
                 //parentInfra.addHosts(VMNode);
                 rootModel.addNodes(VMNode);
             }
@@ -68,13 +69,20 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         composant.setTypeDefinition(td);
         VMNodeList1.addComponents(composant);
 
+        // for testing securtity filter
+     /*   ComponentInstance composant0 = factory.createComponentInstance();
+        composant0.setName("item");
+        // How to set the type to component A
+        TypeDefinition td0 = rootModel.findTypeDefinitionsByID("LoadBalancer");
+        composant0.setTypeDefinition(td0);
+        VMNodeList1.addComponents(composant0);      */
+
+
         //put component B in VM 02
         ContainerNode VMNodeList2 = rootModel.findNodesByID("virtual_2");
         ComponentInstance composant1 = factory.createComponentInstance();
         composant1.setName("loadbalancer");
-        // How to set the type to component A
-        TypeDefinition td1 = rootModel.findTypeDefinitionsByID("LoadBalancer");
-        composant1.setTypeDefinition(td1);
+        composant1.setTypeDefinition(rootModel.findTypeDefinitionsByID("LoadBalancer"));
         VMNodeList2.addComponents(composant1);
 
 
@@ -86,6 +94,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         composant2.setTypeDefinition(td2);
         VMNodeList3.addComponents(composant2);
         population.add(rootModel)   ;
+
 
         return population;
 

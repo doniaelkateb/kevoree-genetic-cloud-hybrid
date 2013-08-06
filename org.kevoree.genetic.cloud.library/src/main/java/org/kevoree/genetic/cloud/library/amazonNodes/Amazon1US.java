@@ -5,7 +5,7 @@ import org.kevoree.annotation.DictionaryAttribute;
 import org.kevoree.annotation.DictionaryType;
 import org.kevoree.annotation.Library;
 import org.kevoree.annotation.NodeType;
-import org.kevoree.library.sky.api.nodeType.PJavaSENode;
+import org.kevoree.library.sky.api.PJavaSENode;
 
 /**
  * Created with IntelliJ IDEA.

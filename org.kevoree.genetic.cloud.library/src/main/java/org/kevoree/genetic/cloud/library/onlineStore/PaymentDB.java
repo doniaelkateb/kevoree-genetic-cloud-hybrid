@@ -7,7 +7,7 @@ import org.kevoree.framework.AbstractComponentType;
 @ComponentType
 @DictionaryType({
         @DictionaryAttribute(name = "vcpu_load", defaultValue = "0.6", optional = true) ,
-        @DictionaryAttribute(name = "security", defaultValue = "2.0", optional = true)
+        @DictionaryAttribute(name = "security", defaultValue = "3.0", optional = true)
 })
 @Requires({
         @RequiredPort(name="outgoingConnection", type = PortType.MESSAGE, optional = true)
