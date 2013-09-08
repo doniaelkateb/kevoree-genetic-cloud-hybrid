@@ -57,10 +57,10 @@ public class LatencyFitness extends AbstractSLAKevoreeFitnessFunction{
          Double constante = 5.0;
          Double Sourcelocation = 0.0;
          Double Destinationlocation = 0.0;
+         Double redunduntcomponents = 0.0;
 
 
-         List<Object> TotalComponents  = model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = *}]");
-
+        List<Object> TotalComponents  = model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = *}]");
         List<Object> virtualNodes = model.selectByQuery("nodes[*]");
         for (Object node : virtualNodes)
         {
@@ -81,9 +81,9 @@ public class LatencyFitness extends AbstractSLAKevoreeFitnessFunction{
 
 
          /* Getting (dest - src) networkLatency from each component*/
-             if (zone.equals("US")) Destinationlocation  =  100.0;
-             if (zone.equals("EU")) Destinationlocation  =  200.0;
-             if (zone.equals("AS")) Destinationlocation  =  300.0;
+             if (zone.equals("US")) Destinationlocation  =  1.0;
+             if (zone.equals("EU")) Destinationlocation  =  2.0;
+             if (zone.equals("AS")) Destinationlocation  =  3.0;
 
 
           /*location 1.0 ---> USA*/
@@ -91,14 +91,21 @@ public class LatencyFitness extends AbstractSLAKevoreeFitnessFunction{
           /*location 3.0 ---> ASIA*/
 
          Sourcelocation = resolver1.getDefault(containernode, localisation);
-         System.out.println(Sourcelocation);
          LatencyperComponent  =   response_time + (( Destinationlocation  -   Sourcelocation)   *   networkLatency) ;
+
          /*Latency which decreases by redunduncy/*
          /*Calculating replicata number*/
-         List<Object> composants = model.selectByQuery("nodes[{ name = *}]/components[{typeDefinition.name = ItemDB}]");
-         System.out.println(composants.size());
-         LatencyperComponent =  LatencyperComponent/composants.size() ;
+         List<Object> components = model.selectByQuery("nodes[*]/components[*]");
+            for (Object o : components) {
+                ComponentInstance ci = (ComponentInstance) o;
+                if (ci.getName() == co.getName()) {
+                    redunduntcomponents   =redunduntcomponents+1;
+                }
+            }
+
+         LatencyperComponent =  LatencyperComponent/redunduntcomponents ;
          TotalLatency  =  TotalLatency + LatencyperComponent  ;
+
 
          System.out.println(TotalLatency);
          }

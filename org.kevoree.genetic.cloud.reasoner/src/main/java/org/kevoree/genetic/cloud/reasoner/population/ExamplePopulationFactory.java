@@ -52,7 +52,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
                 //ContainerNode parentInfra = (ContainerNode) obj;
                 VMNode.setName("virtual_" + i);
                 VMNode.setTypeDefinition(rootModel.findTypeDefinitionsByID("Rackspace"+i));
-                System.out.println(VMNode.getTypeDefinition());
+              //  System.out.println(VMNode.getTypeDefinition());
                 //parentInfra.addHosts(VMNode);
                 rootModel.addNodes(VMNode);
             }
