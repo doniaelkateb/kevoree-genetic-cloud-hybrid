@@ -1,5 +1,6 @@
 package org.kevoree.genetic.cloud.reasoner.util;
 
+import org.kevoree.ContainerNode;
 import org.kevoree.DictionaryValue;
 import org.kevoree.Instance;
 import org.kevoree.TypeDefinition;
@@ -31,6 +32,7 @@ public class PropertyCachedResolver {
         default_cache.put(i.getTypeDefinition(), cacheValue);
         return cacheValue;
     }
+
 
 
 }

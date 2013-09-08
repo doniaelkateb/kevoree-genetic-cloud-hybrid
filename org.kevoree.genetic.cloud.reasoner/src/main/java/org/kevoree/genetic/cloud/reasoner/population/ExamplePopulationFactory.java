@@ -64,7 +64,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         //put component A in VM 01
         ContainerNode VMNodeList1 = rootModel.findNodesByID("virtual_1");
         ComponentInstance composant = factory.createComponentInstance();
-        composant.setName("item");
+        composant.setName("ItemDB");
         TypeDefinition td = rootModel.findTypeDefinitionsByID("ItemDB");
         composant.setTypeDefinition(td);
         VMNodeList1.addComponents(composant);
@@ -81,7 +81,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         //put component B in VM 02
         ContainerNode VMNodeList2 = rootModel.findNodesByID("virtual_2");
         ComponentInstance composant1 = factory.createComponentInstance();
-        composant1.setName("loadbalancer");
+        composant1.setName("LoadBalancer");
         composant1.setTypeDefinition(rootModel.findTypeDefinitionsByID("LoadBalancer"));
         VMNodeList2.addComponents(composant1);
 
@@ -89,7 +89,7 @@ public class ExamplePopulationFactory implements KevoreePopulationFactory {
         //put component C in VM 03
         ContainerNode VMNodeList3 = rootModel.findNodesByID("virtual_3");
         ComponentInstance composant2 = factory.createComponentInstance();
-        composant2.setName("userdb");
+        composant2.setName("UserDB");
         TypeDefinition td2 = rootModel.findTypeDefinitionsByID("UserDB");
         composant2.setTypeDefinition(td2);
         VMNodeList3.addComponents(composant2);
