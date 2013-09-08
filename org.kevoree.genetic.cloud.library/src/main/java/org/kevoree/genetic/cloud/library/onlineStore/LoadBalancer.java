@@ -7,6 +7,8 @@ import org.kevoree.framework.AbstractComponentType;
 @ComponentType
 @DictionaryType({
         @DictionaryAttribute(name = "vcpu_load", defaultValue = "0.2", optional = true) ,
+        @DictionaryAttribute(name = "response time", defaultValue = "100", optional = true),
+        @DictionaryAttribute(name = "source", defaultValue = "europe", optional = true),
         @DictionaryAttribute(name = "security", defaultValue = "2.0", optional = true)
 })
 @Requires({

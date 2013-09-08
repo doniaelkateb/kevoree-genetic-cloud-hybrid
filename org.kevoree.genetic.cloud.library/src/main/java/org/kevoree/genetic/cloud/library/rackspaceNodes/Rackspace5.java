@@ -24,7 +24,7 @@ import org.kevoree.library.sky.api.PJavaSENode;
         @DictionaryAttribute(name = "vCPUs", defaultValue = "4", optional = true),
         @DictionaryAttribute(name = "Price/hour", defaultValue = "0.48", optional = true),
         @DictionaryAttribute(name = "Price/month", defaultValue = "350.40", optional = true),
-        @DictionaryAttribute(name = "location", defaultValue = "US", optional = true),
+        @DictionaryAttribute(name = "location", defaultValue = "1.0", optional = true),
 })
 
 
